@@ -1,0 +1,33 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131212;
+}
+
+.nav-container h3 {
+    margin: 10px;
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.nav-container a:hover {
+    color: #fefefe86;
+}
