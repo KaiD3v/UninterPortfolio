@@ -5,6 +5,7 @@
 
 .nav-container {
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -30,4 +31,22 @@
 
 .nav-container a:hover {
     color: #fefefe86;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+    .nav-container {
+        justify-content: center;
+    }
+    .nav-container h3{
+        margin: 2px;
+    }
+
+    .nav-container ul {
+        margin: 20px 10px;
+        gap: 5px;
+        font-size: 12px;
+    }
+
 }

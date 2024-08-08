@@ -34,13 +34,13 @@
 @media screen and (max-width: 600px) {
     .home-container article {
         flex-direction: column;
-        max-width: 415px;
+        max-width: 373px;
         width: 100%;
         align-items: center;
     }
 
     .home-container img {
-        max-width: 415px;
+        max-width: 373px;
         width: 100%;
     }
 }
