@@ -1,0 +1,46 @@
+.home-container {
+    margin: 3rem auto;
+}
+
+.home-container article {
+    display: flex;
+    flex-direction: row;
+    max-width: 850px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.home-container article img {
+    border: solid 1px black;
+    margin: auto 20px;
+}
+
+.home-container article h1 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.home-container article h3 {
+    font-size: 14px;
+}
+
+.home-container p {
+    font-size: 14px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+    .home-container article {
+        flex-direction: column;
+        max-width: 415px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .home-container img {
+        max-width: 415px;
+        width: 100%;
+    }
+}
