@@ -5,32 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles//global.css">
     <script src="../scripts/sendEmail.js"></script>
+    <script src="../scripts/getNavBar.js"></script>
 </head>
 <body>
-    <div>
+    <div class="nav-placeholder"></div>
+    <div class="container">
         <h1>Entre em Contato</h1>
         <form>
             <label class="normal-label">
                 <span>Nome</span>
-                <input type="text" placeholder="Seu Nome...">
+                <input id="name" type="text" placeholder="Seu Nome...">
             </label>
             <label class="normal-label">
                 <span>Email</span>
-                <input type="text" placeholder="Seu E-Mail...">
+                <input id="email" type="email" placeholder="Seu E-Mail...">
             </label>
             <label class="normal-label">
                 <span>Mensagem</span>
-                <textarea placeholder="Sua mensagem...">
-
-                </textarea>
+                <textarea id="message" placeholder="Sua mensagem..."></textarea>
             </label>
             <label class="checkbox-row">
-                <input type="checkbox" value="false">
+                <input id="checkbox" type="checkbox" value="false">
                 <span>Confirmar Envio?</span>
             </label>
-            <button>Enviar</button>
+            <button id="send-btn">Enviar</button>
         </form>
+    </div>
+
+    <div id="pop-up" class="pop-up">
+        <div class="pop-up-content">
+            <span class="close-btn">&times;</span>
+            <h2>Sua Mensagem:</h2>
+            <p>Nome: <span id="name-popup"></span></p>
+            <p>E-Mail <span id="email-popup"></span></p>
+            <p>Message: <span id="message-popup"></span></p>
+
+            <p>Mensagem enviada com sucesso!</p>
+            <button class="confirm-btn">Ok</button>
+        </div>
     </div>
 </body>
 </html>
